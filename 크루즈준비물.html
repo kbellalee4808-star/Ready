@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>크루즈 준비물 체크리스트 — 처음이라도 빠뜨리지 않게</title>
+<meta name="description" content="크루즈 여행 준비물을 D-30 서류부터 하선일까지 시간순으로 정리한 체크리스트. 체크한 내용은 자동 저장됩니다.">
+<meta property="og:title" content="크루즈 준비물 체크리스트">
+<meta property="og:description" content="D-30 서류부터 하선일까지, 시간순 체크리스트">
+<meta property="og:type" content="website">
+
+<style>
+@font-face{font-family:'GmarketSans';font-weight:700;font-style:normal;
+src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-display:swap;}
+@font-face{font-family:'GmarketSans';font-weight:500;font-style:normal;
+src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-display:swap;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root{
+  --navy:#1B3A5C; --navy-deep:#12283F; --gold:#D4A94A;
+  --ivory:#FAF7F2; --ash:#F1ECE3; --ink:#2A2622; --muted:#7A736B;
+  --line:#E2DCD1; --alert:#A63D2F; --ok:#2E6B52;
+  --disp:'GmarketSans','Noto Sans KR',sans-serif;
+  --body:'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+body{background:var(--ash);font-family:var(--body);color:var(--ink);
+  font-size:15px;line-height:1.65;word-break:keep-all;}
+.wrap{max-width:520px;margin:0 auto;background:var(--ivory);min-height:100vh;
+  box-shadow:0 0 40px rgba(27,58,92,.08);}
+
+.bar{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;padding:11px 18px 13px;}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;}
+.bar-label{font-family:var(--disp);font-weight:500;font-size:13px;letter-spacing:.02em;opacity:.85;}
+.bar-num{font-family:var(--disp);font-weight:700;font-size:17px;color:var(--gold);}
+.track{height:6px;background:rgba(255,255,255,.16);border-radius:99px;margin-top:8px;overflow:hidden;}
+.fill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),#EBC776);
+  border-radius:99px;transition:width .4s cubic-bezier(.4,0,.2,1);}
+
+.hero{padding:40px 24px 78px;background:var(--navy);color:#fff;position:relative;overflow:hidden;}
+.hero:after{content:"";position:absolute;left:-10%;right:-10%;bottom:-32px;height:64px;
+  background:var(--ivory);border-radius:50% 50% 0 0;z-index:0;}
+.eyebrow{display:inline-block;font-family:var(--disp);font-weight:500;font-size:11px;
+  letter-spacing:.16em;color:var(--gold);border:1px solid rgba(212,169,74,.45);
+  padding:5px 11px;border-radius:99px;margin-bottom:16px;}
+.hero h1{font-family:var(--disp);font-weight:700;font-size:27px;line-height:1.35;
+  margin:0 0 12px;letter-spacing:-.01em;position:relative;z-index:2;}
+.hero p{margin:0;font-size:14px;color:rgba(255,255,255,.78);position:relative;z-index:2;}
+.hero .note{display:inline-block;margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.72);
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  padding:7px 12px;border-radius:99px;position:relative;z-index:2;}
+
+.tools{display:flex;gap:8px;padding:16px 20px 4px;align-items:center;flex-wrap:wrap;}
+.toggle{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--navy);
+  background:#fff;border:1px solid var(--line);border-radius:99px;padding:7px 13px;
+  cursor:pointer;font-weight:500;}
+.toggle input{accent-color:var(--navy);width:15px;height:15px;margin:0;}
+.btn-ghost{margin-left:auto;background:none;border:none;color:var(--muted);font-size:12.5px;
+  cursor:pointer;font-family:var(--body);text-decoration:underline;text-underline-offset:3px;padding:6px;}
+
+.stage{padding:22px 20px 4px;}
+.stage-head{display:flex;align-items:center;gap:11px;margin-bottom:4px;}
+.tag{font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.03em;
+  background:var(--navy);color:var(--gold);padding:5px 10px;border-radius:5px;white-space:nowrap;}
+.stage h2{font-family:var(--disp);font-weight:700;font-size:18px;margin:0;color:var(--navy);}
+.stage-sub{font-size:13px;color:var(--muted);margin:0 0 14px;padding-left:2px;}
+.stage-count{font-size:12px;color:var(--muted);font-family:var(--disp);font-weight:500;margin-left:auto;}
+
+ul.list{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;}
+ul.list li{border-bottom:1px solid var(--line);}
+ul.list li:last-child{border-bottom:none;}
+label.item{display:flex;gap:11px;padding:13px 14px;cursor:pointer;align-items:flex-start;transition:background .15s;}
+label.item:active{background:var(--ash);}
+label.item input{appearance:none;width:20px;height:20px;flex:0 0 20px;margin:2px 0 0;
+  border:1.5px solid #C6BDAE;border-radius:6px;background:#fff;cursor:pointer;
+  transition:all .15s;position:relative;}
+label.item input:checked{background:var(--navy);border-color:var(--navy);}
+label.item input:checked:after{content:"";position:absolute;left:6.5px;top:2.5px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+label.item input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+.txt{flex:1;font-size:14.5px;line-height:1.5;transition:opacity .2s;}
+.txt small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px;line-height:1.55;}
+input:checked ~ .txt{opacity:.4;text-decoration:line-through;text-decoration-color:#B9B0A2;}
+input:checked ~ .txt small{text-decoration:none;}
+.pill{display:inline-block;font-size:10.5px;font-family:var(--disp);font-weight:500;
+  padding:2px 6px;border-radius:4px;margin-left:5px;vertical-align:2px;}
+.pill.opt{background:var(--ash);color:var(--muted);}
+.pill.key{background:rgba(212,169,74,.2);color:#9A7620;}
+body.essential-only li.opt{display:none;}
+
+.buy{display:flex;align-items:center;gap:12px;margin:10px 0 0;padding:13px 14px;
+  background:#fff;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);}
+.buy .ico{font-size:22px;line-height:1;}
+.buy .bt{flex:1;}
+.buy .bt b{display:block;font-size:13.5px;font-weight:700;color:var(--navy);}
+.buy .bt span{display:block;font-size:12px;color:var(--muted);margin-top:1px;}
+.buy .go{color:var(--gold);font-size:15px;}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0 0;}
+.card.warn{background:#FDF6F4;border-color:#EBD3CD;}
+.card.warn h3{color:var(--alert);}
+.card h3{font-family:var(--disp);font-weight:700;font-size:14.5px;margin:0 0 8px;color:var(--navy);}
+.card p{margin:0;font-size:13.5px;color:#4A443D;}
+.card p + p{margin-top:9px;}
+.okbox{margin-top:12px;padding:11px 13px;background:#EFF6F1;border:1px solid #CFE3D7;
+  border-radius:9px;font-size:13px;color:#2C5645;}
+.okbox b{color:var(--ok);}
+
+.visa{background:var(--navy-deep);color:#fff;border-radius:14px;padding:20px 18px;margin:16px 0 0;}
+.visa h3{font-family:var(--disp);font-weight:700;font-size:16px;margin:0 0 6px;color:#fff;}
+.visa .lead{font-size:13px;color:rgba(255,255,255,.7);margin:0 0 15px;}
+.region{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:6px;}
+.region button{font-family:var(--disp);font-weight:500;font-size:13.5px;padding:11px 6px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;
+  border-radius:9px;cursor:pointer;transition:all .18s;}
+.region button:hover{background:rgba(255,255,255,.14);}
+.region button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);
+  color:var(--navy-deep);font-weight:700;}
+.region button:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+.links{margin-top:14px;}
+.links a{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:12px 13px;
+  text-decoration:none;color:#fff;margin-bottom:8px;transition:background .15s;}
+.links a:hover{background:rgba(255,255,255,.13);}
+.links .ln{flex:1;}
+.links .ln b{display:block;font-size:14px;font-weight:700;}
+.links .ln span{display:block;font-size:12px;color:rgba(255,255,255,.62);margin-top:1px;line-height:1.45;}
+.links .arrow{color:var(--gold);font-size:15px;}
+.visa-foot{font-size:11.5px;color:rgba(255,255,255,.5);margin:12px 0 0;line-height:1.6;}
+.visa-empty{font-size:13px;color:rgba(255,255,255,.55);padding:14px 2px 2px;}
+
+.mistakes{counter-reset:m;list-style:none;padding:0;margin:0;}
+.mistakes li{counter-increment:m;display:flex;gap:12px;padding:13px 0;border-bottom:1px dashed var(--line);}
+.mistakes li:last-child{border-bottom:none;}
+.mistakes li:before{content:counter(m);font-family:var(--disp);font-weight:700;font-size:13px;
+  color:var(--gold);background:var(--navy);width:24px;height:24px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex:0 0 24px;}
+.mistakes b{display:block;font-size:14.5px;font-weight:700;}
+.mistakes span{font-size:13px;color:var(--muted);}
+
+.cta{margin:30px 0 0;background:var(--navy);color:#fff;padding:32px 24px 34px;text-align:center;}
+.cta h2{font-family:var(--disp);font-weight:700;font-size:20px;margin:0 0 8px;line-height:1.4;}
+.cta p{font-size:13.5px;color:rgba(255,255,255,.7);margin:0 0 18px;}
+.cta a{display:block;background:var(--gold);color:var(--navy-deep);font-family:var(--disp);
+  font-weight:700;font-size:15.5px;padding:15px;border-radius:11px;text-decoration:none;}
+.cta .sub{font-size:11.5px;color:rgba(255,255,255,.45);margin:12px 0 0;}
+footer{padding:20px 24px 40px;font-size:11.5px;color:var(--muted);line-height:1.7;
+  text-align:center;background:var(--ivory);}
+
+@media (max-width:360px){.hero h1{font-size:24px;}.region{grid-template-columns:1fr;}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+@media print{
+  body{background:#fff;} .bar,.tools,.cta,.visa,.buy{display:none;}
+  .wrap{box-shadow:none;} .hero{background:#fff;color:#000;padding-bottom:20px;}
+  .hero:after{display:none;} .hero h1,.stage h2{color:#000;} label.item{page-break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="bar">
+    <div class="bar-top">
+      <span class="bar-label">짐싸기 진행률</span>
+      <span class="bar-num"><span id="done">0</span> / <span id="total">0</span></span>
+    </div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+  </div>
+
+  <header class="hero">
+    <span class="eyebrow">CRUISE CHECKLIST</span>
+    <h1>크루즈 준비물,<br>순서대로 챙기세요</h1>
+    <p>물건별이 아니라 <b>시간순</b>으로 정리했습니다.<br>지금 해야 할 일이 바로 보입니다.</p>
+    <p class="note">✓ 체크한 내용은 이 기기에 자동 저장됩니다</p>
+  </header>
+
+  <div class="tools">
+    <label class="toggle"><input type="checkbox" id="essOnly">필수만 보기</label>
+    <button class="btn-ghost" id="reset">전체 초기화</button>
+  </div>
+
+  <!-- D-30 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">D-30</span><h2>서류 준비</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">가장 되돌리기 어려운 단계입니다. 여기부터 확인하세요.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="a1"><span class="txt">여권 미리 꺼내두기<span class="pill key">가장 중요</span><small>유효기간은 귀국일 기준 6개월 이상이어야 합니다. 급하게 발급받는 긴급여권으로는 크루즈 탑승이 불가합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="a2"><span class="txt">기항국 비자·전자여행허가<small>아래 버튼에서 공식 사이트를 확인하세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="a3"><span class="txt">여행자보험 가입<small>선내 의료비는 전액 자비이고 육지보다 비쌉니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="a4"><span class="txt">항공권 — 승선 <b>하루 전</b> 도착<small>당일 도착은 지연 한 번으로 크루즈 전체를 놓칩니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="a5"><span class="txt">장기 복용약 영문 처방전<small>입국 심사에서 요구받을 수 있습니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="a6"><span class="txt">여권 사본 보관<small>휴대폰과 가족에게 각각 남겨두세요.</small></span></label></li>
+    </ul>
+
+    <div class="visa">
+      <h3>비자 · 입국요건 확인</h3>
+      <p class="lead">항로를 고르면 공식 사이트로 연결됩니다. 정보를 따로 저장하지 않고 원문으로 바로 보내드립니다.</p>
+      <div class="region">
+        <button data-r="med" aria-pressed="false">지중해 · 유럽</button>
+        <button data-r="nor" aria-pressed="false">북유럽 · 발트</button>
+        <button data-r="ame" aria-pressed="false">미주 · 카리브</button>
+        <button data-r="asi" aria-pressed="false">아시아 · 오세아니아</button>
+      </div>
+      <div class="links" id="links"><p class="visa-empty">항로를 선택해 주세요.</p></div>
+      <p class="visa-foot">기항지에 내리지 않아도 해당 국가의 입국요건을 충족해야 승선이 가능한 경우가 있습니다. 최종 확인은 반드시 선사와 각국 공식 기관을 통해 진행해 주세요.</p>
+    </div>
+
+    <div class="card warn">
+      <h3>ETIAS 사칭 사이트 주의</h3>
+      <p>유럽 ETIAS는 <b>아직 시행 전</b>이며 2026년 말 도입이 예정되어 있습니다. 지금 ETIAS 발급이나 대행을 해준다는 사이트는 사기입니다.</p>
+      <p>신청은 시행 후 <b>europa.eu 공식 도메인</b>에서만 하세요. 입출국 기록 시스템인 EES는 2025년 10월 12일부터 이미 시행 중입니다.</p>
+    </div>
+  </section>
+
+  <!-- D-7 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">D-7</span><h2>예약 · 설정</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">출발 전에 해두면 배에서 훨씬 편합니다.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="b1"><span class="txt">온라인 체크인 · 승선권 발급<small>미리 해두면 승선 대기 시간이 크게 줄어듭니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="b2"><span class="txt">선사 앱 설치<small>일정, 예약, 선내 계정을 전부 앱에서 봅니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="b3"><span class="txt">해외결제 카드 준비 (비자 또는 마스터)<span class="pill key">중요</span><small>승선할 때 카드 등록이 필요합니다. <b>해외 원화결제 차단을 미리 풀어두세요.</b> 막혀 있으면 등록이 안 됩니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="b4"><span class="txt">로밍 또는 이심 준비<small>기항지에서 쓸 용도입니다. 배 위에서는 안 됩니다.</small></span></label></li>
+      <li class="opt"><label class="item"><input type="checkbox" data-k="b5"><span class="txt">기항지 투어 · 스페셜티 레스토랑 예약<span class="pill opt">선택</span><small>인기 있는 일정은 출발 전에 마감됩니다.</small></span></label></li>
+    </ul>
+  </section>
+
+  <!-- D-3 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">D-3</span><h2>캐리어 싸기</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">배에 실어 보낼 짐입니다. 급하게 쓸 물건은 넣지 마세요.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="b6"><span class="txt">러기지 태그 출력·부착<span class="pill key">권장</span><small>달아두면 짐이 객실로 바로 옵니다. 없어도 객실 번호만 알면 승선 입구에서 맡길 수 있고, 익숙해지면 그냥 들고 타기도 합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c1"><span class="txt">포멀 나이트 의상 1벌<small>항해 중 하루 이틀은 드레스코드가 있습니다. 정장이나 원피스면 충분합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c2"><span class="txt">수영복 2벌<small>하나는 마르는 동안 입을 여벌입니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c3"><span class="txt">운동화 + 샌들<small>기항지는 대부분 걷습니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c4"><span class="txt">얇은 겉옷<small>선내 냉방이 셉니다. 여름 항로에서도 필요합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c5"><span class="txt">컨디셔너 · 칫솔 · 치약 · 슬리퍼<span class="pill key">놓치기 쉬움</span><small>샴푸와 바디워시는 대부분 객실에 있지만, 이 네 가지는 없는 경우가 많습니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c6"><span class="txt">세면도구 · 자외선차단제</span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c7"><span class="txt">상비약 (소화제 · 해열제 · 밴드)</span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c8"><span class="txt">멀티 어댑터<small>선사마다 미국형 110V와 유럽형 220V가 섞여 있고, 콘센트도 부족합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="c9"><span class="txt">선글라스 · 모자<small>갑판에서는 그늘이 거의 없습니다.</small></span></label></li>
+      <li class="opt"><label class="item"><input type="checkbox" data-k="c10"><span class="txt">카드 목걸이 줄<span class="pill opt">선택</span><small>크루즈 카드를 하루 종일 들고 다녀야 합니다.</small></span></label></li>
+      <li class="opt"><label class="item"><input type="checkbox" data-k="c11"><span class="txt">스노클 장비<span class="pill opt">선택</span></span></label></li>
+      <li class="opt"><label class="item"><input type="checkbox" data-k="c12"><span class="txt">방수팩 · 지퍼백<span class="pill opt">선택</span></span></label></li>
+    </ul>
+    <a class="buy" href="https://link.coupang.com/a/gjwPPlecjA" target="_blank" rel="noopener noreferrer">
+      <span class="ico">🔌</span>
+      <span class="bt"><b>루베아 45W 5포트 멀티 어댑터</b><span>제가 쓰는 제품입니다</span></span>
+      <span class="go">→</span>
+    </a>
+  </section>
+
+  <!-- 승선일 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">승선일</span><h2>손가방</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">캐리어는 저녁이 돼서야 객실에 도착합니다. 이 가방이 첫날 반나절을 좌우합니다.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="d1"><span class="txt">여권 · 승선권 · 신용카드<span class="pill key">필수</span></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="d2"><span class="txt">수영복<span class="pill key">놓치기 쉬움</span><small>승선 첫날 오후 수영장이 일주일 중 가장 한산합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="d3"><span class="txt">상비약 · 멀미약<small>첫 출항 때 필요한 경우가 많습니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="d4"><span class="txt">보조배터리<small>부치는 짐에 넣을 수 없습니다. 반드시 손가방에.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="d5"><span class="txt">빈 물통</span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="d6"><span class="txt">겉옷 한 장</span></label></li>
+    </ul>
+  </section>
+
+  <!-- 선상 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">선상</span><h2>배에 타면</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">첫날 이것만 해두면 나머지는 편합니다.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="e1"><span class="txt">휴대폰을 비행기모드로<span class="pill key">가장 중요</span><small>바다 위에서 신호가 잡히면 요금이 크게 나옵니다. 승선하면 바로 비행기모드로 두세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="e2"><span class="txt">안전교육 참석<span class="pill key">의무</span><small>첫날 필수입니다. 빠지면 하선 조치될 수 있습니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="e3"><span class="txt">선상 와이파이 구매<small>비행기와 마찬가지로 따로 결제해야 합니다. 요금제가 여러 가지라 첫날 확인하세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="e4"><span class="txt">자석 후크 붙이기<span class="pill key">추천</span><small>크루즈는 선체가 철로 되어 있어서 벽에 자석이 잘 붙습니다. 후크 몇 개면 수납 공간이 순식간에 늘어나요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="e5"><span class="txt">소액 달러 지폐 준비<small>룸서비스나 짐 옮겨주시는 분께 드립니다. $1·$5 위주로.</small></span></label></li>
+    </ul>
+  </section>
+
+  <!-- 기항지 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">기항지</span><h2>내리는 날</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">배는 기다려주지 않습니다.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="f1"><span class="txt">현지 통화 · 교통비 비상금<small>특히 중국은 카드가 안 되는 곳이 많고 택시도 현금이나 알리페이를 요구합니다. 최소한 교통비 정도는 현금으로 준비하세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="f2"><span class="txt">목적지 주소를 현지어로 캡처<small>중국과 일본은 택시 기사님이 영어를 못 하시는 경우가 많습니다. 가려는 곳 주소를 현지어로 미리 저장해두세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="f3"><span class="txt">출항 시간 · 배 이름 메모<span class="pill key">중요</span><small>개별 관광 중 늦으면 다음 항구까지 자비로 이동해야 합니다.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="f4"><span class="txt">편한 신발</span></label></li>
+      <li class="opt"><label class="item"><input type="checkbox" data-k="f5"><span class="txt">접이식 가방<span class="pill opt">선택</span></span></label></li>
+    </ul>
+
+    <div class="card warn">
+      <h3>반입 금지 품목</h3>
+      <p><b>다리미 · 전기포트</b> — 화재 위험으로 대부분의 선사가 금지합니다.<br>
+      <b>고데기</b> — 선사에 따라 다릅니다. 예약한 선사 규정을 확인하세요.<br>
+      <b>긴 멀티탭 · 서지 프로텍터형 멀티탭</b> — 승선 검색에서 가장 많이 압수됩니다.<br>
+      <b>양초 · 향초 · 드론</b><br>
+      <b>주류</b> — 선사마다 규정이 다릅니다.</p>
+      <div class="okbox"><b>가져가도 되는 것</b> — 여행용 USB 멀티 충전기. 서지 기능이 없는 제품이면 문제없습니다.</div>
+      <p>선사별로 기준이 달라지므로, 예약한 선사의 공식 규정을 반드시 확인하세요.</p>
+    </div>
+  </section>
+
+  <!-- 하선 -->
+  <section class="stage">
+    <div class="stage-head"><span class="tag">하선</span><h2>내리기 전날</h2><span class="stage-count" data-count></span></div>
+    <p class="stage-sub">캐리어를 전날 밤 복도에 내놓습니다. 승선일과 정반대 실수가 여기서 납니다.</p>
+    <ul class="list">
+      <li><label class="item"><input type="checkbox" data-k="g1"><span class="txt">다음날 쓸 물건 빼두기<span class="pill key">중요</span><small>입을 옷, 충전기, 화장품, 세면도구는 캐리어에 넣지 마세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="g2"><span class="txt">선내 계정 정산 내역 확인<small>모르는 항목이 있으면 내리기 전에 물어보세요.</small></span></label></li>
+      <li><label class="item"><input type="checkbox" data-k="g3"><span class="txt">객실 서랍·금고 마지막 확인<small>여권과 귀중품을 금고에 두고 내리는 일이 많습니다.</small></span></label></li>
+    </ul>
+  </section>
+
+  <!-- 실수 -->
+  <section class="stage" style="padding-bottom:8px;">
+    <div class="stage-head"><h2>처음 가는 분들이 놓치는 것</h2></div>
+    <ol class="mistakes">
+      <li><div><b>수영복을 캐리어에 넣는다</b><span>첫날 오후를 통째로 놓칩니다.</span></div></li>
+      <li><div><b>여권을 여행 전날에야 찾는다</b><span>유효기간이 모자라거나 아예 못 찾는 경우가 있습니다. 긴급여권으로는 탑승할 수 없습니다.</span></div></li>
+      <li><div><b>승선 당일 비행기를 탄다</b><span>지연 한 번이면 크루즈가 사라집니다.</span></div></li>
+      <li><div><b>비행기모드를 안 켠다</b><span>바다 위에서 요금이 계속 올라갑니다.</span></div></li>
+      <li><div><b>기항지 복귀 시간을 착각한다</b><span>선내 시간과 현지 시간이 다를 수 있습니다.</span></div></li>
+      <li><div><b>팁과 음료 패키지를 예산에 안 넣는다</b><span>객실비 외에 매일 발생하는 비용입니다.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="cta">
+    <h2>더 궁금한 게 있으신가요?</h2>
+    <p>항로마다 준비물이 조금씩 다릅니다.<br>편하게 물어보세요.</p>
+    <a id="ctaLink" href="#">카카오톡으로 문의하기 →</a>
+    <p class="sub" id="ctaBy"></p>
+  </section>
+
+  <footer>
+    본 체크리스트는 개인 경험과 일반적인 선사 규정을 바탕으로 정리한 참고 자료입니다.<br>
+    비자·입국요건·반입 규정은 국가와 선사, 시점에 따라 달라지므로<br>
+    최종 확인은 반드시 각 공식 기관과 예약 선사를 통해 진행해 주세요.
+  </footer>
+</div>
+
+<script>
+var KEY='cruisePack.v2';
+var store={
+  _m:{},
+  get:function(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return this._m||{}}},
+  set:function(o){this._m=o;try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
+};
+var boxes=[].slice.call(document.querySelectorAll('.list input[type=checkbox]'));
+var fill=document.getElementById('fill'),doneEl=document.getElementById('done'),totalEl=document.getElementById('total');
+
+function update(){
+  var d=boxes.filter(function(b){return b.checked;}).length,t=boxes.length;
+  doneEl.textContent=d; totalEl.textContent=t;
+  fill.style.width=(t?d/t*100:0)+'%';
+  document.querySelectorAll('.stage').forEach(function(s){
+    var bs=s.querySelectorAll('.list input'),c=s.querySelector('[data-count]');
+    if(!c||!bs.length)return;
+    c.textContent=[].slice.call(bs).filter(function(b){return b.checked;}).length+'/'+bs.length;
+  });
+}
+(function(){var saved=store.get();boxes.forEach(function(b){b.checked=!!saved[b.dataset.k];});update();})();
+
+boxes.forEach(function(b){
+  b.addEventListener('change',function(){
+    var s=store.get();s[b.dataset.k]=b.checked;store.set(s);update();
+  });
+});
+document.getElementById('reset').addEventListener('click',function(){
+  if(!confirm('체크한 내용을 모두 지울까요?'))return;
+  store.set({});boxes.forEach(function(b){b.checked=false;});update();
+});
+document.getElementById('essOnly').addEventListener('change',function(){
+  document.body.classList.toggle('essential-only',this.checked);
+});
+
+/* 비자 · 입국요건 공식 링크 */
+var COMMON=[
+  {n:'외교부 해외안전여행',d:'국가별 입국·안전 정보 (한국어)',u:'https://www.0404.go.kr/'},
+  {n:'IATA Travel Centre',d:'항공사·선사가 실제로 적용하는 입국 요건',u:'https://www.iatatravelcentre.com/'}
+];
+var VISA={
+  med:[
+    {n:'ETIAS 공식 안내 (EU)',d:'현재 미시행 · 2026년 말 도입 예정. 대행 사이트 주의',u:'https://travel-europe.europa.eu/etias_en'},
+    {n:'EES 입출국 시스템 (EU)',d:'2025년 10월 12일 시행 · 지문·얼굴 등록',u:'https://travel-europe.europa.eu/ees_en'},
+    {n:'영국 ETA',d:'영국 기항 시 필요',u:'https://www.gov.uk/apply-eta'}
+  ],
+  nor:[
+    {n:'ETIAS 공식 안내 (EU)',d:'현재 미시행 · 2026년 말 도입 예정. 대행 사이트 주의',u:'https://travel-europe.europa.eu/etias_en'},
+    {n:'EES 입출국 시스템 (EU)',d:'2025년 10월 12일 시행 · 지문·얼굴 등록',u:'https://travel-europe.europa.eu/ees_en'},
+    {n:'영국 ETA',d:'사우샘프턴 출발·영국 기항 시 필요',u:'https://www.gov.uk/apply-eta'}
+  ],
+  ame:[
+    {n:'미국 ESTA',d:'미국 출발·기항 시 필수. 승선 전 승인 완료 필요',u:'https://esta.cbp.dhs.gov/'},
+    {n:'캐나다 eTA',d:'알래스카·캐나다 항로에서 필요할 수 있음',u:'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html'}
+  ],
+  asi:[
+    {n:'호주 ETA',d:'호주 기항 시 필요',u:'https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601'},
+    {n:'뉴질랜드 NZeTA',d:'뉴질랜드 기항 시 필요',u:'https://www.immigration.govt.nz/new-zealand-visas/visas/visa/nzeta'}
+  ]
+};
+var linkBox=document.getElementById('links');
+document.querySelectorAll('.region button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.region button').forEach(function(b){b.setAttribute('aria-pressed','false');});
+    btn.setAttribute('aria-pressed','true');
+    linkBox.innerHTML=(VISA[btn.dataset.r]||[]).concat(COMMON).map(function(i){
+      return '<a href="'+i.u+'" target="_blank" rel="noopener noreferrer">'+
+             '<span class="ln"><b>'+i.n+'</b><span>'+i.d+'</span></span><span class="arrow">→</span></a>';
+    }).join('');
+  });
+});
+
+/* ═══════════════════════════════════════════
+   ▼ 팀원용 — 여기 3줄만 바꾸면 내 페이지가 됩니다
+   ═══════════════════════════════════════════ */
+var PARTNER_NAME = "벨라";
+var KAKAO_LINK   = "https://open.kakao.com/o/sbJudavg";
+var REF_LINK     = "https://bella1004_ko.incruises.com/membership";
+/* ═══════════════════════════════════════════ */
+
+document.getElementById('ctaLink').href=KAKAO_LINK;
+document.getElementById('ctaBy').textContent=PARTNER_NAME+' · 크루즈 여행 안내';
+</script>
+</body>
+</html>
